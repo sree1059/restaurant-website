@@ -1,0 +1,130 @@
+{
+  "project_name": "Vantillu",
+  "app_type": "marketing_site",
+  "theme": "Light",
+  "archetype": "1_Organic_Earthy_with_Luxury_Touches",
+  "design_philosophy": "Premium modern design with a warm traditional Telugu atmosphere. Cinematic visual storytelling, luxurious but approachable. Avoid tech-startup aesthetic. Emphasize large editorial typography, generous spacing, and smooth elegant transitions.",
+  "colors": {
+    "background": "#F9F6F0",
+    "surface": "#FFFFFF",
+    "surface_alt": "#F2EBE1",
+    "primary": "#5C1A1B",
+    "secondary": "#C65D47",
+    "accent_gold": "#D4AF37",
+    "text_main": "#2C1E16",
+    "text_muted": "#5A453A",
+    "border": "#E5D8C8"
+  },
+  "typography": {
+    "headings": {
+      "fontFamily": "'Cormorant Garamond', serif",
+      "weights": ["400", "500", "600"],
+      "usage": "H1-H4, editorial large text, hero text",
+      "letterSpacing": "tracking-tight"
+    },
+    "body": {
+      "fontFamily": "'Manrope', sans-serif",
+      "weights": ["300", "400", "500", "600"],
+      "usage": "Paragraphs, navigation, buttons, small text",
+      "letterSpacing": "tracking-normal"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous padding (p-12 to p-32) to let content breathe. Optical alignment over mathematical alignment.",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "bento_grid": "For 'Signature Dishes' and 'Experience' sections: Use asymmetric grid-cols-1 md:grid-cols-12. Mix col-span-4 and col-span-8 for tension and visual interest. Gaps should be wide (gap-6 to gap-12).",
+    "gallery": "Masonry or staggered columns layout (e.g., columns-2 md:columns-3 lg:columns-4 gap-4)."
+  },
+  "components": {
+    "buttons": "Rounded-full or minimal underline text links. Primary CTA: bg-[#5C1A1B] text-[#F9F6F0] hover:bg-[#4A1516]. Secondary CTA: border border-[#5C1A1B] text-[#5C1A1B] hover:bg-[#5C1A1B] hover:text-[#F9F6F0]. Must have magnetic hover effect (framer-motion).",
+    "cards": "For testimonials: Crystal Glassmorphism (backdrop-blur-xl bg-white/40 border border-white/40 shadow-[0_8px_32px_rgba(44,30,22,0.05)]). For dishes: Flat bento items, overflow-hidden with inner image.",
+    "navigation": "Sticky or fixed header (z-50). Crystal glassmorphism backdrop-blur-md bg-[#F9F6F0]/80 border-b border-[#E5D8C8]/50. Links must be visible on desktop."
+  },
+  "animations": {
+    "scroll": "Lenis smooth scroll is MANDATORY. Standard browser scroll is forbidden.",
+    "reveals": "Scroll-triggered staggered Y-axis translates (framer-motion 'whileInView') and fade-ins for text/cards.",
+    "hover": "Image zoom inside containers (group-hover:scale-105 duration-700 ease-out).",
+    "parallax": "Soft parallax on hero and large background images (use framer-motion useScroll)."
+  },
+  "media": {
+    "logo_url": "https://customer-assets.emergentagent.com/job_883ec79a-3b59-44d2-9393-14e5e372a2fd/artifacts/68ekun27_Screenshot%202026-06-05%20151212.png",
+    "hero_ambience": "https://images.pexels.com/photos/30691575/pexels-photo-30691575.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "story_image": "https://images.unsplash.com/photo-1753202048970-16fe8f5e55fa?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "digital_menu_bg": "https://images.unsplash.com/photo-1716816211590-c15a328a5ff0?crop=entropy&cs=srgb&fm=jpg&q=85",
+    "dishes": [
+      {
+        "name": "Authentic Biryani",
+        "url": "https://images.unsplash.com/photo-1589302168068-964664d93dc0?crop=entropy&cs=srgb&fm=jpg&q=85"
+      },
+      {
+        "name": "Banana Leaf Thali",
+        "url": "https://images.pexels.com/photos/14132112/pexels-photo-14132112.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      },
+      {
+        "name": "Traditional Dosa",
+        "url": "https://images.pexels.com/photos/20422123/pexels-photo-20422123.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      },
+      {
+        "name": "Spices & Ingredients",
+        "url": "https://images.pexels.com/photos/10126645/pexels-photo-10126645.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+      }
+    ],
+    "experience_interiors": [
+      "https://images.pexels.com/photos/33321182/pexels-photo-33321182.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.unsplash.com/photo-1730965804534-eff996ac3249?crop=entropy&cs=srgb&fm=jpg&q=85",
+      "https://images.pexels.com/photos/29707937/pexels-photo-29707937.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "https://images.pexels.com/photos/5410418/pexels-photo-5410418.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+    ]
+  },
+  "sections_requirements": [
+    {
+      "name": "Navigation",
+      "details": "Visible on desktop, glassmorphic backdrop. Include links to Story, Menu, Gallery, Contact, and a 'Reserve' button (WhatsApp link)."
+    },
+    {
+      "name": "Hero",
+      "details": "Full-screen (min-h-screen). Background image (hero_ambience) with gradient overlay (black/50 to black/20) for text legibility. Large serif headline: 'Authentic Telugu Flavors, Crafted with Tradition'. Two CTAs: 'View Menu' and 'Visit Restaurant'."
+    },
+    {
+      "name": "Story of Vantillu",
+      "details": "Split layout (grid md:grid-cols-2). Editorial typography. Text explaining family recipes, heritage. Image of interior/architecture (story_image)."
+    },
+    {
+      "name": "Signature Dishes",
+      "details": "Bento grid (Tetris grid strategy). Col-span-8 for main dish (Thali), col-span-4 for others. High-end food photography with hover zoom."
+    },
+    {
+      "name": "Experience",
+      "details": "Showcase of traditional architecture, interiors, family seating. Use 'experience_interiors' images in a staggered layout or small masonry."
+    },
+    {
+      "name": "Digital Menu",
+      "details": "Elegant presentation. Mention QR. Show a mobile mockup or elegant list view. Link to a separate '/menu' page (Sample menu with Telugu dishes like Biryani, Gongura, Pesarattu)."
+    },
+    {
+      "name": "Testimonials",
+      "details": "Premium glassmorphism cards. Slider/Carousel (framer-motion or swiper). Praise for authenticity and ambience."
+    },
+    {
+      "name": "Gallery",
+      "details": "Dynamic masonry of food and restaurant ambience. Hover transitions (grayscale to color, or scale)."
+    },
+    {
+      "name": "Location & Contact",
+      "details": "Google Maps embed. Opening hours. Clean, clear typography."
+    },
+    {
+      "name": "Final CTA & Footer",
+      "details": "Massive typography (text-[8vw]). 'Ready to taste tradition?'. Encourage visit. WhatsApp redirect for reservations. Dark background footer (#2C1E16) with cream text."
+    }
+  ],
+  "technical_instructions_to_main_agent": [
+    "Do not use generic font 'Inter' for headings. Use 'Cormorant Garamond' from Google Fonts.",
+    "Do not use generic blue/purple colors. Stick to the provided warm palette.",
+    "Implement Lenis smooth scrolling in the main App wrapper.",
+    "Ensure all buttons and CTAs that indicate reservation or ordering have an href pointing to 'https://wa.me/...' to simulate WhatsApp redirect.",
+    "Create a separate route for the sample menu page (/menu).",
+    "All interactive elements MUST have data-testid attributes for testing.",
+    "Use framer-motion for all scroll reveals, staggered bento cards, and magnetic buttons."
+  ]
+}

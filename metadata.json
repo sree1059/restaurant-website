@@ -1,0 +1,8 @@
+{
+  "name": "Vantillu - Authentic Telugu Restaurant",
+  "description": "Experience authentic Telugu dining with traditional home-style recipes, slow-cooked Hyderabadi biryanis, gongura delicacies, banana leaf thalis, and handcrafted sweets.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
